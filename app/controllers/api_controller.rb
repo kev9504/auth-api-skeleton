@@ -4,7 +4,7 @@ class ApiController < ApplicationController
         authenticate_token || render_unauthorized("Access Denied")
     end
     
-    def currrent_user
+    def current_user
         @current_user ||= authenticate_token
     end
     
